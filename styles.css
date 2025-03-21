@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c1b4b4;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ensures full viewport height */
+    padding: 0;
+    background-size: cover;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   animation: changeBackground 15s infinite; 
+  }
+
+  @keyframes changeBackground {
+    0% {
+      background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20221224/pngtree-blue-musical-notes-background-image_1530362.jpg'); /* Initial background image */
+    }
+    50% {
+      background-image: url('https://png.pngtree.com/thumb_back/fh260/back_our/20190621/ourmid/pngtree-dance-dancing-training-class-enrollment-background-template-image_194537.jpg'); /* Background image after 5 seconds */
+    }
+    100% {
+      background-image: url('https://st3.depositphotos.com/1064045/15061/i/450/depositphotos_150614902-stock-photo-unusual-cinema-concept-3d-illustration.jpg'); /* Back to the initial background image */
+    }
+  }
+  .categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .category {
+    width: calc(33.33% - 40px); /* Adjust the width for 3 in one line */
+    height: 300px; /* Adjust the height as needed */
+    margin: 20px;
+    background-color: #000000;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.5s ease;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  
+  .categories img {
+    align-items: center;
+      } 
+
+  .category:nth-child(3n + 1) {
+    margin-right: 20px; /* Add margin after every third category */
+  }
+  
+  .category:nth-child(3n) {
+    margin-left: 20px; /* Add margin before every third category */
+  }
+  
+  .category:hover {
+    transform: translateY(-5px);
+  }
+
+ 
+  
+  #categoryDetails {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+  }
+  
